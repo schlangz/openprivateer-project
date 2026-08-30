@@ -274,6 +274,8 @@ h2{margin:0;font:900 clamp(34px,5.2vw,62px)/.98 Arial,sans-serif;letter-spacing:
   background-size:18px 18px}
 .portrait-placeholder span{font:900 43px Arial,sans-serif;opacity:.45}
 .comms-body p{color:#989a92;font-size:11px;max-width:690px}
+.comms-body p a{color:var(--amber);text-decoration:none;border-bottom:1px solid var(--amber2)}
+.comms-body p a:hover{color:var(--green);border-bottom-color:var(--green2)}
 
 .faq{display:grid;gap:8px}
 details{
