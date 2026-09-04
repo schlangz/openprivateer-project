@@ -185,11 +185,6 @@ h1 span{
   content:"";position:absolute;width:160px;height:160px;border:1px solid #415533;border-radius:50%;
   left:50%;top:50%;transform:translate(-50%,-50%)
 }
-.radar:after{
-  content:"";position:absolute;left:50%;top:50%;width:110px;height:1px;
-  background:linear-gradient(90deg,var(--mfd),transparent);transform-origin:left;animation:sweep 4s linear infinite
-}
-@keyframes sweep{to{transform:rotate(360deg)}}
 .radar .ring{position:absolute;border:1px solid #334329;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
 .ring.r1{width:105px;height:105px}.ring.r2{width:55px;height:55px}
 .cross{position:absolute;background:#3d5030}
