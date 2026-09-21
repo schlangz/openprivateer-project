@@ -68,6 +68,7 @@
       <a href="#community">COMMUNITY</a>
       <a href="#platforms">PLATFORMS</a>
       <a href="#faq">FAQ</a>
+      <a href="#donate">DONATE</a>
     </nav>
 
     <div class="clockbox">
@@ -185,7 +186,7 @@
         <article class="system-card"><span class="system-id">MOD 01</span><h3>Modding</h3><p>Generic content overrides plus a full text translation system with auto-generated English catalog and in-game language switching.</p></article>
         <article class="system-card"><span class="system-id">CI 03</span><h3>Platforms</h3><p>Automated Windows, Linux and macOS builds on every push with rolling development artifacts. Other platforms on demand.</p></article>
         <article class="system-card"><span class="system-id">MAP 11</span><h3>Universe Navigation</h3><p>Added support for the entire Wing Commander Universe sectors while keeping the original 320x200 Privateer map presentation.</p></article>
-        <article class="system-card"><span class="system-id">MULTI 01</span><h3>Multiplayer</h3><p>The game already builds on top of a basic client/server architecture, so multiplayer games will be possible in the near future.</p></article>
+        <article class="system-card"><span class="system-id">MULTI 01</span><h3>Multiplayer</h3><p>The basic client/server architecture is functional and PVP/PVE multiplayer games are already possible. Mission progression will be added in the future.</p></article>
       </div>
     </section>
 
@@ -284,19 +285,23 @@
           </div>
           <div class="status-row">
             <div class="status-label"><span>SPACE FLIGHT FOUNDATION</span><b>ALMOST COMPLETE</b></div>
-            <div class="bar"><i style="width:85%"></i></div>
+            <div class="bar"><i style="width:90%"></i></div>
           </div>
           <div class="status-row">
             <div class="status-label"><span>COMBAT & DAMAGE</span><b class="amber">CURRENTLY IN DEVELOPMENT</b></div>
-            <div class="bar amberbar"><i style="width:90%"></i></div>
+            <div class="bar amberbar"><i style="width:95%"></i></div>
           </div>
           <div class="status-row">
-            <div class="status-label"><span>SAVEGAME WRITING</span><b>OPEN</b></div>
-            <div class="bar"><i style="width:20%"></i></div>
+            <div class="status-label"><span>SAVEGAME WRITING</span><b>IN PROGRESS</b></div>
+            <div class="bar"><i style="width:30%"></i></div>
           </div>
           <div class="status-row">
-            <div class="status-label"><span>DIALOGUES</span><b>OPEN</b></div>
+            <div class="status-label"><span>DIALOGUES</span><b>IN PROGRESS</b></div>
             <div class="bar"><i style="width:50%"></i></div>
+          </div>
+          <div class="status-row">
+            <div class="status-label"><span>MULTIPLAYER</span><b>IN PROGRESS</b></div>
+            <div class="bar"><i style="width:60%"></i></div>
           </div>
         </div>
 
@@ -304,10 +309,10 @@
           <div class="panel-label danger">OPEN SYSTEMS</div>
           <ul>
             <li>Savegames can be loaded but not written yet.</li>
-            <li>Enemy Ship AI needs more testing</li>
             <li>No external ship views yet.</li>
             <li>Non-plot mission objectives are not fully tracked in flight.</li>
             <li>In-flight and Gameflow dialogues are not yet player-facing.</li>
+            <li>Multiplayer does not implement mission design yet.</li>
           </ul>
         </div>
       </div>
@@ -316,6 +321,7 @@
         <span class="transmission-icon">!</span>
         <div>
           <b>DISPLAY PIPELINE NOTE</b>
+          <p>OpenPrivateer includes <u>optional</u> xBRZ pixel scaling, CRT filter and texture filtering to help the original 320x200 artwork look its best on modern high-resolution displays, while still letting you keep the original pixel-perfect look if you prefer.</p>
           <p>HD and widescreen support will come later and gradually evolve alongside the main development, while the original 320x200 experience remains the priority for now.</p>
         </div>
       </div>
@@ -326,7 +332,7 @@
         <div class="section-tag">FILE 05</div>
         <div>
           <p class="kicker">PUBLIC ACCESS</p>
-          <h2>First downloads are planned for September.</h2>
+          <h2>Playable Alpha downloads are planned for end of September.</h2>
         </div>
       </header>
 
@@ -334,7 +340,7 @@
         <div class="download-copy">
           <div class="panel-label">ACCESS CONTROL</div>
           <p class="warning-text">PUBLIC ACCESS: LOCKED</p>
-          <p>Development is currently taking place in a private repository.<br/>The first public builds are planned for the September development update.</p>
+          <p>Development is currently taking place in a private repository.<br/><br/>The first public alpha build will be released together with the September development update.</p>
           <p>No proprietary Origin/EA game data will be included.<br/>A legally owned copy of Wing Commander: Privateer is required.</p>
         </div>
       </div>
@@ -446,11 +452,24 @@
         <details><summary>Can I download it now?</summary><p>Not yet. The first public downloads are planned for the September development update.</p></details>
         <details><summary>Will it support widescreen and HD?</summary><p>Yes, but those features will develop gradually alongside the core game. Faithful 320x200 behavior remains the immediate priority.</p></details>
         <details><summary>Will there be modding support?</summary><p>Yes. Content overrides and translation already exist (original PAK and IFF format), with broader modding capabilities (bases, planets, ships, etc.) planned over time.</p></details>
-        <details><summary>What about multiplayer?</summary><p>A basic client/server architecture for multiplayer setup is already part of the implementation, however the game does not support multiplayer gameplay yet.</p></details>
+        <details><summary>What about multiplayer?</summary><p>Core client/server architecture is already part of OpenPrivateer. Basic multiplayer gameplay (PVP, PVE) is already wired in but mission progression isn't.</p></details>
       </div>
     </section>
 
+    <section id="donate" class="section">
+      <header class="section-header">
+        <div class="section-tag">CRED 01</div>
+        <div>
+          <p class="kicker">DONATION</p>
+          <h2>Free to Play, Free to Enjoy.</h2>
+        </div>
+      </header>
 
+      <div>
+        <p class="lead">OpenPrivateer is and always will be completely free. If you enjoy the project and would like to support the work that goes into it, you can buy me a coffee. Every bit of support is greatly appreciated!</p>
+        <p class="lead"><a href="https://www.buymeacoffee.com/schlangz" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></p>
+      </div>
+    </section>
 
   </main>
 
