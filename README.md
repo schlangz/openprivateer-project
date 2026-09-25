@@ -1,5 +1,7 @@
 # OpenPrivateer Project Site
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-donate-FFDD00?labelColor=black&logo=buy-me-a-coffee&logoColor=FFDD00)](https://www.buymeacoffee.com/schlangz)
+
 Source for the [OpenPrivateer](https://openprivateer.org) landing page - screenshots,
 development status and progress updates for the project.
 
