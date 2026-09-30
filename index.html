@@ -60,10 +60,11 @@
 
     <nav id="site-nav" class="nav">
       <a href="#about">INFO</a>
-      <a href="#features">SYSTEMS</a>
+      <a href="#features">FEATURES</a>
       <a href="#screenshots">SCREENSHOTS</a>
       <a href="#status">DEVELOPMENT</a>
-      <a href="#downloads">DOWNLOAD</a>
+      <a href="#downloads">DOWNLOADS</a>
+      <a href="#multiplayer">MULTIPLAYER</a>
       <a href="#modding">MODDING</a>
       <a href="#community">COMMUNITY</a>
       <a href="#platforms">PLATFORMS</a>
@@ -315,9 +316,11 @@
         <div class="damage-report bevel">
           <div class="panel-label danger">OPEN SYSTEMS</div>
           <ul>
-            <li>Multiplayer needs full mission design.</li>
-            <li>Open Universe is still empty.</li>
-            <li>Infinite Feature Requests.</li>
+            <li>New UI dialogs need a proper Privateer theme.</li>
+            <li>Multiplayer has no mission progress yet.</li>
+            <li>Open Universe can't be visited yet (it's still empty).</li>
+            <li>Fleet Action hasn't been started yet.</li>
+            <li>All the other feature requests.</li>
           </ul>
         </div>
       </div>
@@ -336,17 +339,66 @@
       <header class="section-header">
         <div class="section-tag">FILE 05</div>
         <div>
-          <p class="kicker">PUBLIC ACCESS</p>
-          <h2>Playable Alpha downloads are planned for end of September.</h2>
+          <p class="kicker">DOWNLOAD</p>
+          <h2>Alpha release.</h2>
         </div>
       </header>
 
       <div class="download-console bevel">
         <div class="download-copy">
-          <div class="panel-label">ACCESS CONTROL</div>
-          <p class="warning-text">PUBLIC ACCESS: LOCKED</p>
-          <p>Development is currently taking place in a private repository.<br/><br/>The first public alpha build will be released together with the September development update.</p>
+          <div class="panel-label">GETTING STARTED</div>
+          <p class="warning-text">DISCLAIMER: This is an alpha build which can contain bugs, glitches and unfinished features.</p>
+          <div class="download-keypad">
+            <a href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-windows-x86_64.zip">WINDOWS x86_64</a>
+            <a href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-linux-x86_64.zip">LINUX x86_64</a>
+            <a href="https://github.com/schlangz/openprivateer-project/releases/latest">ALL RELEASES</a>
+          </div>
+          <ol>
+          <li>Download and extract OpenPrivateer.</li>
+          <li>Copy the required original Privateer game files into the OpenPrivateer folder:
+          <ul><li>PRIV.TRE / INITCFG.PAK for Privateer</li>
+          <li>RF.TRE / INITRF.PAK for Righteous Fire Expansion</li></ul>
+          (the GOG version ships the TRE files in a GAME.GOG archive, extract them with 7-Zip)</li>
+          <li>Start OpenPrivateer.</li>
+          <li>The required folders and README files are created automatically when OpenPrivateer starts.</li>
+          <li>Consult the README.TXT file that now exists in the same folder as the executable.</li>
+          <li>Start a New Game or copy an existing save into the savegame folder.</li>
+          </ol>
           <p>No proprietary Origin/EA game data will be included.<br/>A legally owned copy of Wing Commander: Privateer is required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="multiplayer" class="section">
+      <header class="section-header">
+        <div class="section-tag">MULTI 02</div>
+        <div>
+          <p class="kicker">MULTIPLAYER</p>
+          <h2>CLIENT & SERVER.</h2>
+        </div>
+      </header>
+
+      <div class="download-console bevel">
+        <div class="download-copy">
+          <div class="panel-label">GETTING STARTED</div>
+          <p class="warning-text">DISCLAIMER: This is an alpha build which can contain bugs, glitches and unfinished features.</p>
+          <ol>
+          <li>Start the dedicated server (headless - no window, no SDL, no GPU, no audio):
+          <ul><li><i>openprivateer_server --tre /path/to/PRIV.TRE</i> (UDP port 24601 by default)</li>
+          <li>Important parameters (<i>openprivateer_server --help</i> lists them all):
+          <ul><li><i>--port N</i></li>
+          <li><i>--max-players N</i></li>
+          <li><i>--verbose</i></li></ul></li></ul>
+          </li>
+          <li>Connect a client:
+          <ul><li><i>openprivateer --connect HOST:24601 /path/to/PRIV.TRE</i></li>
+          <li>Important parameters:
+          <ul><li><i>--connect HOST:PORT</i></li>
+          <li><i>--callsign NAME</i> (shows your pilot in the other players' HUDs and in the server log)</li></ul></li></ul>
+          </li>
+          </ol>
+          An invalid option or an unreadable archive is a one-line error and a non-zero exit.<br/>
+          The server will reject clients running a different game build, a different game (Privateer vs. Righteous Fire), or a different experience mode (Classic vs. Enhanced/Modern) than the server.
         </div>
       </div>
     </section>
@@ -454,10 +506,10 @@
       <div class="faq">
         <details><summary>Is OpenPrivateer a remake?</summary><p>It is a modern reimplementation of the Privateer engine that uses the original game data.</p></details>
         <details><summary>Does it include the original assets?</summary><p>No, OpenPrivateer does not distribute copyrighted game assets. You must provide the original game data from a copy you own.</p></details>
-        <details><summary>Can I download it now?</summary><p>Not yet. The first public downloads are planned for the September development update.</p></details>
+        <details><summary>Can I download it now?</summary><p>Yes. The first public Alpha release downloads are available in the download section.</p></details>
         <details><summary>Will it support widescreen and HD?</summary><p>Yes, but those features will develop gradually alongside the core game. Faithful 320x200 behavior remains the immediate priority.</p></details>
         <details><summary>Will there be modding support?</summary><p>Yes. Content overrides and translation already exist (original PAK and IFF format), with broader modding capabilities (bases, planets, ships, etc.) planned over time.</p></details>
-        <details><summary>What about multiplayer?</summary><p>Core client/server architecture is already part of OpenPrivateer. Basic multiplayer gameplay (PVP, PVE) is already wired in but mission progression isn't.</p></details>
+        <details><summary>What can I do in multiplayer ?</summary><p>Basic multiplayer gameplay (PVP, PVE) is already part of the core game but mission progression isn't.</p></details>
       </div>
     </section>
 

@@ -247,15 +247,26 @@ h2{margin:0;font:900 clamp(34px,5.2vw,62px)/.98 Arial,sans-serif;letter-spacing:
 .transmission b{font-size:10px;color:var(--amber);letter-spacing:.08em}
 .transmission p{margin:3px 0 0;color:#98988c;font-size:10px}
 
-.download-console{display:grid;grid-template-columns:1fr 270px;gap:40px;padding:0 32px 32px}
+.download-console {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 32px 32px;
+}
 .warning-text{color:var(--amber);font-weight:700;letter-spacing:.07em}
-.download-copy p:not(.warning-text){max-width:760px;color:#9a9b93;font-size:11px}
+.download-copy p:not(.warning-text) {
+    max-width: none;
+    color: #9a9b93;
+    font-size: 16px;
+    line-height: 1.7;
+}
 .download-keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding-top:24px}
-.download-keypad span{
+.download-keypad span,.download-keypad a{
   display:grid;place-items:center;min-height:46px;background:linear-gradient(#2c3335,#111516);
   border:1px solid #596264;box-shadow:inset 1px 1px #747b7b,inset -2px -2px #050708;
-  color:#b8b9ae;font-size:10px
+  color:#b8b9ae;font-size:10px;text-decoration:none;font-weight:700;letter-spacing:.05em;
+  text-align:center;padding:4px 8px
 }
+.download-keypad a:hover{border-color:var(--amber);color:#fff}
 
 .comms-window{padding-bottom:28px}
 .comms-body{display:grid;grid-template-columns:220px 1fr;gap:35px;align-items:center;padding:32px}
