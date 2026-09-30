@@ -64,3 +64,31 @@ setInterval(updateClock, 1000);
     if (e.key === 'ArrowRight') show(current + 1);
   });
 })();
+
+// Per-platform download links: "latest" is a single GitHub release, but not
+// every release includes every platform (e.g. a Windows-only hotfix), so a
+// plain /releases/latest/download/<name> link can 404 for a platform that
+// release didn't build. This finds, per button, the newest release that
+// actually contains that asset and points the link there instead. The
+// static href already in the HTML is the no-JS/fetch-failure fallback.
+(() => {
+  const links = [...document.querySelectorAll('.download-keypad a[data-asset]')];
+  if (!links.length) return;
+
+  fetch('https://api.github.com/repos/schlangz/openprivateer-project/releases?per_page=10')
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(releases => {
+      links.forEach(link => {
+        const name = link.dataset.asset;
+        for (const release of releases) {
+          const asset = (release.assets || []).find(a => a.name === name);
+          if (asset) {
+            link.href = asset.browser_download_url;
+            return;
+          }
+        }
+        // No matching asset in any fetched release: leave the static fallback href.
+      });
+    })
+    .catch(() => { /* offline or rate-limited: static fallback hrefs stand */ });
+})();

@@ -260,7 +260,7 @@ h2{margin:0;font:900 clamp(34px,5.2vw,62px)/.98 Arial,sans-serif;letter-spacing:
     font-size: 16px;
     line-height: 1.7;
 }
-.download-keypad{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:24px}
+.download-keypad{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;padding-top:24px}
 .download-keypad span,.download-keypad a{
   display:grid;place-items:center;min-height:46px;background:linear-gradient(#2c3335,#111516);
   border:1px solid #596264;box-shadow:inset 1px 1px #747b7b,inset -2px -2px #050708;
@@ -308,7 +308,6 @@ footer b{color:#aaa99e}footer a{color:var(--green);text-decoration:none}
   .mfd{margin-top:10px}
   .systems-grid{grid-template-columns:1fr 1fr}
   .status-grid,.intel-grid,.download-console{grid-template-columns:1fr}
-  .download-keypad{grid-template-columns:repeat(2,1fr);max-width:320px}
 }
 @media(max-width:650px){
   main,footer{width:min(var(--max),calc(100% - 24px))}
