@@ -37,8 +37,9 @@ setInterval(updateClock, 1000);
   const show = (index) => {
     current = (index + shots.length) % shots.length;
     image.src = shots[current].dataset.full;
-    image.alt = `OpenPrivateer screenshot ${String(current + 1).padStart(2, '0')}`;
-    counter.textContent = `REC ${String(current + 1).padStart(2, '0')} / 10`;
+    const thumb = shots[current].querySelector('img');
+    image.alt = (thumb && thumb.alt) || `OpenPrivateer screenshot ${String(current + 1).padStart(2, '0')}`;
+    counter.textContent = `REC ${String(current + 1).padStart(2, '0')} / ${String(shots.length).padStart(2, '0')}`;
   };
   const open = (index) => {
     show(index);
