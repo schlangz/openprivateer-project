@@ -165,6 +165,95 @@
           </p>
         </article>
       </div>
+
+      <article class="info-status-console bevel">
+        <div class="panel-label">CURRENT STATUS // PUBLIC ALPHA</div>
+        <div class="info-status-body">
+          <p class="info-status-lead">
+            OpenPrivateer is a playable reconstruction of <em>Privateer</em> and its
+            <em>Righteous Fire</em> add-on, running on the original game data. It is in public alpha.
+          </p>
+
+          <p>
+            Most of the original file formats are documented and cross-checked against the real
+            game files, the original executable's own disassembly, and independent third-party tools.
+          </p>
+
+          <h3>SINGLE-PLAYER</h3>
+          <p>
+            A new game starts from the original's own starting data, and the bases work as they do
+            in the original: the Ship Dealer with equipment, repairs and new hulls, the Commodity
+            Exchange, the Software Booth, the bar, the Research Computers, the guild offices and
+            both mission boards. Generated missions use the original's own encounters and objectives,
+            run their mission scripts in flight, and pay on landing. The Privateer story campaign can
+            be played from Sandoval's first offer to Admiral Terrell's closing credits, with its
+            conversations, cutscenes and plot missions driven by the game's own scripts.
+            <em>Righteous Fire</em> runs on the same engine and can import a Privateer pilot the way
+            the original does.
+          </p>
+
+          <h3>SAVES</h3>
+          <p>
+            Saves are compatible with the original game. The Mission Computer loads original
+            <code>.SAV</code>/<code>.PRS</code> files and writes new ones that the original game
+            loads, always under a new file name. State the original format cannot hold, such as
+            parked ships, goes into a separate <code>.openpriv.json</code> file next to the save.
+          </p>
+
+          <h3>SPACE FLIGHT AND COMBAT</h3>
+          <p>
+            The cockpits, flight model, NPC combat AI, weapons, shields and armour, equipment damage,
+            the tractor beam, cargo drops, ejected pilots, asteroid fields and in-flight communications
+            are reconstructed from the original executable and its data. Keyboard, mouse, joystick
+            and gamepad controls can be remapped, and controller axes and throttles can be calibrated.
+          </p>
+
+          <h3>EXPERIENCE MODES</h3>
+          <p>
+            Classic aims to reproduce the original gameplay. Enhanced and Modern currently behave
+            the same: they add small conveniences and allow optional OpenPrivateer additions which
+            Classic never enables.
+          </p>
+
+          <div class="info-status-options">
+            <div>
+              <b>MULTIPLE SHIPS</b>
+              <p>
+                Off by default. A pilot can own several ships and switch between them or sell them
+                from a fleet selector on the Launch Pad. A separate setting lets a hired pilot fly
+                a parked ship as the player's escort in single-player.
+              </p>
+            </div>
+            <div>
+              <b>OPEN UNIVERSE</b>
+              <p>
+                On by default and experimental. The Navigation Map can show the wider Wing Commander
+                universe beyond the Gemini Sector. Built-in content adds one extra flyable system
+                with three landable bases and an asteroid field, while JSON5 mod files can add
+                systems, nav points, factions and asteroid fields. These systems have no traffic
+                or missions yet.
+              </p>
+            </div>
+          </div>
+
+          <p>
+            Outside the experience modes, a content-override layer lets players replace game assets
+            or translate the engine's own text. The launcher finds the original game files and
+            configures the game, experience mode, music and settings folder. Release builds check
+            once a day for a newer build and only show a notice; nothing is downloaded automatically.
+          </p>
+
+          <h3>MULTIPLAYER</h3>
+          <p>
+            Multiplayer is an OpenPrivateer addition, since the 1993 game has no networking. A
+            separate headless <code>openprivateer_server</code> holds one authoritative universe,
+            and clients join it by direct IP. Players can fly together across several star systems,
+            fight NPCs and each other, use autopilot and hyperspace jumps, and land to refuel and
+            relaunch. Trading, missions, persistence and chat are not networked, and bases stay
+            private local screens.
+          </p>
+        </div>
+      </article>
     </section>
 
     <section id="features" class="section">
