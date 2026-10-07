@@ -728,3 +728,66 @@ body.lightbox-open { overflow: hidden; }
   .info-status-options p { font-size: 16px; }
 }
 
+/* Current status: block spacing and modding summary */
+.info-status-body > h3 { margin-top: 42px; }
+.info-status-body > h3:first-of-type { margin-top: 30px; }
+.info-status-options { margin-top: 18px; margin-bottom: 34px; }
+
+.modding-status-console {
+  margin: 18px 0 42px;
+  border: 1px solid #3e4749;
+  background: linear-gradient(145deg, #161c1f, #0a0f11);
+  box-shadow: inset 1px 1px rgba(255,255,255,.05), inset -1px -1px #020304;
+  clip-path: polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+}
+.modding-status-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 13px 20px 12px;
+  border-bottom: 1px solid #3e4749;
+  color: var(--amber);
+  font: 700 14px/1.2 "Courier New", Courier, monospace;
+  letter-spacing: .13em;
+}
+.modding-status-head span:last-child { color: var(--green); }
+.modding-status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 20px;
+}
+.modding-status-grid > div { padding: 0 20px; }
+.modding-status-grid > div:first-child {
+  padding-left: 0;
+  border-right: 1px solid #3e4749;
+}
+.modding-status-grid > div:last-child { padding-right: 0; }
+.modding-status-grid b {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--green);
+  font: 700 13px/1.2 "Courier New", Courier, monospace;
+  letter-spacing: .1em;
+}
+.modding-status-grid ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #999b93;
+  font: 17px/1.7 Arial, Helvetica, sans-serif;
+}
+.modding-status-grid li::marker { color: var(--green); }
+
+@media(max-width:800px) {
+  .modding-status-grid { grid-template-columns: 1fr; gap: 20px; }
+  .modding-status-grid > div { padding: 0; }
+  .modding-status-grid > div:first-child {
+    padding-bottom: 20px;
+    border-right: 0;
+    border-bottom: 1px solid #3e4749;
+  }
+}
+
+@media(max-width:650px) {
+  .modding-status-head { flex-direction: column; gap: 5px; }
+  .modding-status-grid ul { font-size: 16px; }
+}
