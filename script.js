@@ -71,7 +71,8 @@ setInterval(updateClock, 1000);
 // plain /releases/latest/download/<name> link can 404 for a platform that
 // release didn't build. This finds, per button, the newest release that
 // actually contains that asset and points the link there instead. The
-// static href already in the HTML is the no-JS/fetch-failure fallback.
+// static href already in the HTML is the no-JS/fetch-failure fallback. A button
+// whose asset is in none of the fetched releases is hidden.
 (() => {
   const links = [...document.querySelectorAll('.download-keypad a[data-asset]')];
   if (!links.length) return;
@@ -88,7 +89,10 @@ setInterval(updateClock, 1000);
             return;
           }
         }
-        // No matching asset in any fetched release: leave the static fallback href.
+        // No matching asset in any fetched release: no build of this platform is
+        // published, so the button is hidden instead of leading to a 404. It
+        // appears again as soon as a release contains the asset.
+        link.style.display = 'none';
       });
     })
     .catch(() => { /* offline or rate-limited: static fallback hrefs stand */ });
