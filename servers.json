@@ -14,6 +14,13 @@
       "region": "US East New York",
       "contact": "OpenPrivateer Discord",
       "note": "Enhanced with All Equipment. Needs the server password."
+    },
+    {
+      "address": "66.42.97.39:24601",
+      "name": "OpenPrivateer US West",
+      "region": "US West Los Angeles",
+      "contact": "OpenPrivateer Discord",
+      "note": "Enhanced with All Equipment. Needs the server password."
     }
   ]
 }
