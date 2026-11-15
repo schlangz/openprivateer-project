@@ -7,6 +7,13 @@
       "region": "EU Helsinki",
       "contact": "OpenPrivateer Discord",
       "note": "Enhanced with All Equipment. Needs the server password."
+    },
+    {
+      "address": "45.77.144.5:24601",
+      "name": "OpenPrivateer US East",
+      "region": "US East New York",
+      "contact": "OpenPrivateer Discord",
+      "note": "Enhanced with All Equipment. Needs the server password."
     }
   ]
 }
