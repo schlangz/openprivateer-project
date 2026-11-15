@@ -1,4 +1,12 @@
 {
   "version": 1,
-  "servers": []
+  "servers": [
+    {
+      "address": "95.217.134.254:24601",
+      "name": "WING DEV",
+      "region": "EU Helsinki",
+      "contact": "OpenPrivateer Discord",
+      "note": "Enhanced with All Equipment. Needs the server password."
+    }
+  ]
 }
