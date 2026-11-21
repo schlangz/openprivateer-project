@@ -1,33 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#05090d">
-
-  <!-- Primary SEO -->
-  <title>OpenPrivateer - Modern Reimplementation of Wing Commander: Privateer</title>
-  <meta name="description" content="OpenPrivateer is a modern reimplementation of Wing Commander: Privateer, focused on authentic behavior, preservation, portability and modding on modern systems.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://openprivateer.org/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="OpenPrivateer - Modern Reimplementation of Wing Commander: Privateer">
-  <meta property="og:description" content="A modern reimplementation of Wing Commander: Privateer for modern systems, using the original game data from a legally owned copy.">
-  <meta property="og:url" content="https://openprivateer.org/">
-  <meta property="og:site_name" content="OpenPrivateer">
-  <meta property="og:image" content="https://openprivateer.org/assets/screenshots/01.png">
-  <meta property="og:image:alt" content="OpenPrivateer gameplay screenshot">
-
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenPrivateer - Modern Reimplementation of Wing Commander: Privateer">
-  <meta name="twitter:description" content="A modern reimplementation of Wing Commander: Privateer for modern systems.">
-  <meta name="twitter:image" content="https://openprivateer.org/assets/screenshots/01.png">
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#05090d" name="theme-color"/>
+<!-- Primary SEO -->
+<title>OpenPrivateer - Modern Reimplementation of Wing Commander: Privateer</title>
+<meta content="OpenPrivateer recreates Wing Commander: Privateer and Righteous Fire for modern systems, with classic gameplay, online multiplayer, extensive modding and optional enhancements." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://openprivateer.org/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="OpenPrivateer - Modern Reimplementation of Wing Commander: Privateer" property="og:title"/>
+<meta content="A modern reimplementation of Wing Commander: Privateer for modern systems, using the original game data from a legally owned copy." property="og:description"/>
+<meta content="https://openprivateer.org/" property="og:url"/>
+<meta content="OpenPrivateer" property="og:site_name"/>
+<meta content="https://openprivateer.org/assets/screenshots/01.png" property="og:image"/>
+<meta content="OpenPrivateer gameplay screenshot" property="og:image:alt"/>
+<!-- Twitter / X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="OpenPrivateer - Modern Reimplementation of Wing Commander: Privateer" name="twitter:title"/>
+<meta content="A modern reimplementation of Wing Commander: Privateer for modern systems." name="twitter:description"/>
+<meta content="https://openprivateer.org/assets/screenshots/01.png" name="twitter:image"/>
+<!-- Structured data -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -39,696 +36,444 @@
     "isAccessibleForFree": true
   }
   </script>
-
-  <link rel="stylesheet" href="styles.css">
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="stars stars-a" aria-hidden="true"><a href="#top"></a></div>
-  <div class="stars stars-b" aria-hidden="true"></div>
-  <div class="crt" aria-hidden="true"></div>
-
-  <header class="cockpit-bar">
-    <a class="logo" href="#top" aria-label="OpenPrivateer home">
-      <span class="logo-glyph">OP</span>
-      <span class="logo-copy">
-        <b>OPENPRIVATEER</b>
-        <small>WING COMMANDER UNIVERSE</small>
-      </span>
-    </a>
-
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">NAV</button>
-
-    <nav id="site-nav" class="nav">
-      <a href="#about">INFO</a>
-      <a href="#features">FEATURES</a>
-      <a href="#screenshots">SCREENSHOTS</a>
-      <a href="#status">DEVELOPMENT</a>
-      <a href="#downloads">DOWNLOADS</a>
-      <a href="#manual">MANUAL</a>
-      <a href="#multiplayer">MULTIPLAYER</a>
-      <a href="#modding">MODDING</a>
-      <a href="#community">COMMUNITY</a>
-      <a href="#platforms">PLATFORMS</a>
-      <a href="#faq">FAQ</a>
-      <a href="#donate">DONATE</a>
-    </nav>
-
-    <div class="clockbox">
-      <span>LOCAL</span>
-      <b id="clock">--:--:--</b>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-panel bevel">
-        <div class="panel-label">OPENPRIVATEER // PUBLIC ALPHA</div>
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <p class="kicker">WING COMMANDER UNIVERSE</p>
-            <h1>OPEN<span>PRIVATEER</span></h1>
-            <p class="lead">
-              A modern reimplementation of <strong>Wing Commander: Privateer</strong>,
-              built around the original game data, authentic behavior, portability,
-              modding and long-term preservation.
-            </p>
-
-            <div class="hero-actions">
-              <a class="wc-button primary" href="#status"><span>01</span> DEVELOPMENT STATUS</a>
-              <a class="wc-button" href="#downloads"><span>02</span> PUBLIC DOWNLOADS</a>
-            </div>
-
-            <div class="legal-strip stacked">
-              <b>GAME DATA REQUIRED</b>
-              <span>OpenPrivateer does not distribute copyrighted game assets. You must own Wing Commander: Privateer and provide the original game data files yourself.</span>
-            </div>
-          </div>
-
-          <aside class="mfd">
-            <div class="mfd-frame">
-              <div class="mfd-title">
-                <span class="status-dot">STATUS</span>
-              </div>
-              <div class="mfd-screen">
-                <div class="radar">
-                  <i class="ring r1"></i>
-                  <i class="ring r2"></i>
-                  <i class="cross c1"></i>
-                  <i class="cross c2"></i>
-                  <i class="blip b1"></i>
-                  <i class="blip b2"></i>
-                  <i class="blip b3"></i>
-                </div>
-                <div class="mfd-lines">
-                  <div><span>ENGINE</span><b>ONLINE</b></div>
-                  <div><span>MISSIONS</span><b>ONLINE</b></div>
-                  <div><span>SPACEFLIGHT</span><b>ONLINE</b></div>
-                  <div><span>COMBAT</span><b>ONLINE</b></div>
-                  <div><span>MODDING</span><b class="amber">BUILDING</b></div>
-                  <div><span>MULTIPLAYER</span><b class="amber">BUILDING</b></div>
-                </div>
-              </div>
-              <div class="mfd-controls">
-                <span>SYS</span><span>NAV</span><span>COMM</span><span>DATA</span>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <header class="section-header">
-        <div class="section-tag">FILE 01</div>
-        <div>
-          <p class="kicker">ABOUT THE PROJECT</p>
-          <h2>About OpenPrivateer</h2>
-        </div>
-      </header>
-
-      <div class="intel-grid">
-        <article class="intel-card bevel">
-          <div class="panel-label">WHAT IT IS</div>
-          <p>
+<div aria-hidden="true" class="stars stars-a"><a href="#top"></a></div>
+<div aria-hidden="true" class="stars stars-b"></div>
+<div aria-hidden="true" class="crt"></div>
+<header class="cockpit-bar">
+<a aria-label="OpenPrivateer home" class="logo" href="#top">
+<span class="logo-glyph">OP</span>
+<span class="logo-copy">
+<b>OPENPRIVATEER</b>
+<small>WING COMMANDER UNIVERSE</small>
+</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">NAV</button>
+<nav class="nav" id="site-nav"><a href="#about">INFO</a><a href="#features">FEATURES</a><a href="#screenshots">SCREENSHOTS</a><a href="#whats-new">WHAT'S NEW</a><a href="#status">DEVELOPMENT</a><a href="#downloads">DOWNLOADS</a><a href="#multiplayer">MULTIPLAYER</a><a href="#modding">MODDING</a><a href="#manual">MANUAL</a><a href="#community">COMMUNITY</a><a href="#faq">FAQ</a></nav>
+<div class="clockbox">
+<span>LOCAL</span>
+<b id="clock">--:--:--</b>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="hero-panel bevel">
+<div class="panel-label">OPENPRIVATEER // PUBLIC ALPHA</div>
+<div class="hero-inner">
+<div class="hero-copy">
+<p class="kicker">WING COMMANDER UNIVERSE</p>
+<h1>OPEN<span>PRIVATEER</span></h1>
+<p class="lead">A faithful, native reimplementation of <strong>Wing Commander: Privateer</strong> and <strong>Righteous Fire</strong> for modern systems. Play the original adventure, explore optional enhancements, install mods and fly with other pilots online.</p>
+<div class="hero-actions"><a class="wc-button primary" href="#downloads"><span>01</span> DOWNLOAD ALPHA</a><a class="wc-button" href="#features"><span>02</span> EXPLORE FEATURES</a></div>
+<div class="legal-strip stacked">
+<b>GAME DATA REQUIRED</b>
+<span>OpenPrivateer does not distribute copyrighted game assets. You must own Wing Commander: Privateer and provide the original game data files yourself.</span>
+</div>
+</div>
+<aside class="mfd">
+<div class="mfd-frame">
+<div class="mfd-title">
+<span class="status-dot">STATUS</span>
+</div>
+<div class="mfd-screen">
+<div class="radar">
+<i class="ring r1"></i>
+<i class="ring r2"></i>
+<i class="cross c1"></i>
+<i class="cross c2"></i>
+<i class="blip b1"></i>
+<i class="blip b2"></i>
+<i class="blip b3"></i>
+</div>
+<div class="mfd-lines">
+<div><span>ENGINE</span><b>ONLINE</b></div>
+<div><span>MISSIONS</span><b>ONLINE</b></div>
+<div><span>SPACEFLIGHT</span><b>ONLINE</b></div>
+<div><span>COMBAT</span><b>ONLINE</b></div>
+<div><span>MODDING</span><b class="">ONLINE</b></div>
+<div><span>MULTIPLAYER</span><b class="amber">TESTING</b></div>
+</div>
+</div>
+<div class="mfd-controls">
+<span>SYS</span><span>NAV</span><span>COMM</span><span>DATA</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="about">
+<header class="section-header">
+<div class="section-tag">FILE 01</div>
+<div>
+<p class="kicker">ABOUT THE PROJECT</p>
+<h2>About OpenPrivateer</h2>
+</div>
+</header>
+<div class="intel-grid">
+<article class="intel-card bevel">
+<div class="panel-label">WHAT IT IS</div>
+<p>
             OpenPrivateer brings the original Wing Commander: Privateer to modern systems. It uses the original game files and aims to recreate everything from spaceflight and combat to missions, conversations, music and cutscenes as faithfully as possible.
           </p>
-        </article>
-        <article class="intel-card bevel">
-          <div class="panel-label">THE APPROACH</div>
-          <p>
+</article>
+<article class="intel-card bevel">
+<div class="panel-label">THE APPROACH</div>
+<p>
             The original game comes first. Once everything works as it should, OpenPrivateer can build on that with optional improvements, modern features and modding support. Players who prefer the classic experience can keep it that way.
           </p>
-        </article>
-      </div>
-
-      <article class="info-status-console bevel">
-        <div class="panel-label">CURRENT STATUS // PUBLIC ALPHA</div>
-        <div class="info-status-body">
-          <p class="info-status-lead">
-            OpenPrivateer is a playable reconstruction of <em>Privateer</em> and its
-            <em>Righteous Fire</em> add-on, running on the original game data. It is in public alpha.
-          </p>
-
-          <p>
-            Most of the original file formats are documented and cross-checked against the real
-            game files, the original executable's own disassembly, and independent third-party tools.
-          </p>
-
-          <h3>SINGLE-PLAYER</h3>
-          <p>
-            A new game starts from the original's own starting data, and the bases work as they do
-            in the original: the Ship Dealer with equipment, repairs and new hulls, the Commodity
-            Exchange, the Software Booth, the bar, the Research Computers, the guild offices and
-            both mission boards. Generated missions use the original's own encounters and objectives,
-            run their mission scripts in flight, and pay on landing. The Privateer story campaign can
-            be played from Sandoval's first offer to Admiral Terrell's closing credits, with its
-            conversations, cutscenes and plot missions driven by the game's own scripts.
-            <em>Righteous Fire</em> runs on the same engine and can import a Privateer pilot the way
-            the original does.
-          </p>
-
-          <h3>SAVES</h3>
-          <p>
-            Saves are compatible with the original game. The Mission Computer loads original
-            <code>.SAV</code>/<code>.PRS</code> files and writes new ones that the original game
-            loads, always under a new file name. State the original format cannot hold, such as
-            parked ships, goes into a separate <code>.openpriv.json</code> file next to the save.
-          </p>
-
-          <h3>SPACE FLIGHT AND COMBAT</h3>
-          <p>
-            The cockpits, flight model, NPC combat AI, weapons, shields and armour, equipment damage,
-            the tractor beam, cargo drops, ejected pilots, asteroid fields and in-flight communications
-            are reconstructed from the original executable and its data. Keyboard, mouse, joystick
-            and gamepad controls can be remapped, and controller axes and throttles can be calibrated.
-          </p>
-
-          <h3>EXPERIENCE MODES</h3>
-          <p>
-            Classic aims to reproduce the original gameplay. Enhanced and Modern currently behave
-            the same: they add small conveniences and allow optional OpenPrivateer additions which
-            Classic never enables.
-          </p>
-
-          <div class="info-status-options">
-            <div>
-              <b>MULTIPLE SHIPS</b>
-              <p>
-                Off by default. A pilot can own several ships and switch between them or sell them
-                from a fleet selector on the Launch Pad. A separate setting lets a hired pilot fly
-                a parked ship as the player's escort in single-player.
-              </p>
-            </div>
-            <div>
-              <b>OPEN UNIVERSE</b>
-              <p>
-                On by default and experimental. Extends the Navigation Map beyond Gemini and allows
-                mods to add sectors, quadrants, systems, nav points, jump connections, factions,
-                asteroid fields and landable bases.
-              </p>
-            </div>
-          </div>
-
-          <p>
-            Outside the experience modes, a content-override layer lets players replace game assets
-            or translate the engine's own text. The launcher finds the original game files and
-            configures the game, experience mode, music and settings folder. Release builds check
-            once a day for a newer build and only show a notice; nothing is downloaded automatically.
-          </p>
-
-          <div class="modding-status-console">
-            <div class="modding-status-head">
-              <span>MODDING</span>
-              <span>AVAILABLE NOW</span>
-            </div>
-            <div class="modding-status-grid">
-              <div>
-                <b>MISSIONS &amp; NEW GAME</b>
-                <ul>
-                  <li>Custom board missions</li>
-                  <li>New systems and mod bases</li>
-                  <li>Custom starting location</li>
-                  <li>Starting ship and loadout</li>
-                  <li>Credits and reputation</li>
-                </ul>
-              </div>
-              <div>
-                <b>WEAPONS &amp; EQUIPMENT</b>
-                <ul>
-                  <li>New guns</li>
-                  <li>Missiles and launchers</li>
-                  <li>Shields, engines and armour</li>
-                  <li>ECM and repair droids</li>
-                  <li>Prices and availability</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <h3>MULTIPLAYER</h3>
-          <p>
-            Multiplayer is an OpenPrivateer addition, since the 1993 game has no networking. A
-            separate headless <code>openprivateer_server</code> holds one authoritative universe,
-            and clients join it by direct IP. Players can fly together across several star systems,
-            fight NPCs and each other, use autopilot and hyperspace jumps, and land to refuel and
-            relaunch. Trading, missions, persistence and chat are not networked, and bases stay
-            private local screens.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section id="features" class="section">
-      <header class="section-header">
-        <div class="section-tag">FILE 02</div>
-        <div>
-          <p class="kicker">GAME FEATURES</p>
-          <h2>What works so far</h2>
-        </div>
-      </header>
-
-      <div class="systems-grid">
-        <article class="system-card"><span class="system-id">MOVI 01</span><h3>Startup & Intros</h3><p>Real PRIV.TRE/RF.TRE loading, mode-select splash, voiced intros, title screen and options menu.</p></article>
-        <article class="system-card"><span class="system-id">BASE 01</span><h3>Bases & Gameflow</h3><p>All bases/planets interiors, animated tiles and sprites, story NPC gating and per-base music.</p></article>
-        <article class="system-card"><span class="system-id">BASE 04</span><h3>Mission Computer</h3><p>Load original DOS savegames, working MISSIONS/FIN/MAN tabs and mission rejection in Enhanced/Modern modes.</p></article>
-        <article class="system-card"><span class="system-id">BASE 02</span><h3>Economy</h3><p>Commodity Exchange with real buy/sell trading and live per-visit price and stock rolls.</p></article>
-        <article class="system-card"><span class="system-id">BASE 03</span><h3>Ship Dealer</h3><p>Real buying, selling and repairs, hardpoint selection and savegame-driven display.</p></article>
-        <article class="system-card"><span class="system-id">CORE 02</span><h3>Non-Plot Missions</h3><p>Merchant Guild, Mercenary Guild and Mission Machine offers driven by the original mission generator.</p></article>
-        <article class="system-card"><span class="system-id">CORE 03</span><h3>Space Flight</h3><p>All cockpits (supporting sprite-less cockpits), self-destruct, navigation map, mission objectives and original takeoff, landing and jump cutscenes.</p></article>
-        <article class="system-card"><span class="system-id">AUD 01</span><h3>Audio</h3><p>Three MIDI backends (OPL2, SF2, MIDI-Mapper) plus CD audio, with real scene and combat music selection.</p></article>
-        <article class="system-card"><span class="system-id">GPU 01</span><h3>Rendering</h3><p>Render scaling, texture filtering, xBRZ and DOSBox Staging derived CRT Filter and Color Grading.</p></article>
-        <article class="system-card"><span class="system-id">MOD 01</span><h3>Modding</h3><p>Generic content overrides plus a full text translation system with auto-generated English catalog and in-game language switching.</p></article>
-        <article class="system-card"><span class="system-id">CI 01</span><h3>Platforms</h3><p>Automated Windows, Linux and macOS builds on every push with rolling development artifacts. Other platforms on demand.</p></article>
-        <article class="system-card"><span class="system-id">NAV 01</span><h3>Universe Navigation</h3><p>Added support for the entire Wing Commander Universe sectors while keeping the original 320x200 Privateer map presentation.</p></article>
-        <article class="system-card"><span class="system-id">MULTI 01</span><h3>Multiplayer</h3><p>The basic client/server architecture is functional and PVP/PVE multiplayer games are already possible. Mission progression will be added in the future.</p></article>
-        <article class="system-card"><span class="system-id">MOD 03</span><h3>Multiple Ships</h3><p>Enhanced and Modern modes allow you to own multiple ships. You can switch to other ships while landed on a base.</p></article>
-        <article class="system-card"><span class="system-id">MOD 04</span><h3>Wingmen</h3><p>Enhanced and Modern modes allow you to hire wingmen in case you own multiple ships. There are different skill tiers available each with a different cost per mission.</p></article>
-        <article class="system-card"><span class="system-id">INPUT 01</span><h3>HOTAS</h3><p>Full HOTAS support for an authentic hands-on flight experience.</p></article>
-        <article class="system-card"><span class="system-id">UPDT 01</span><h3>Update Check</h3><p>The game will check during startup if a new version is available.</p></article>
-      </div>
-    </section>
-
-
-    <section id="screenshots" class="section visual-archive">
-      <header class="section-header">
-        <div class="section-tag">FILE 03</div>
-        <div>
-          <p class="kicker">SCREENSHOTS</p>
-          <h2>Screenshots</h2>
-        </div>
-      </header>
-
-      <div class="archive-console bevel">
-        <div class="panel-label">IN-GAME SCREENSHOTS</div>
-        <p class="archive-intro">
+</article>
+</div>
+<article class="info-status-console bevel">
+<div class="panel-label">PROJECT OVERVIEW // PUBLIC ALPHA</div><div class="info-status-body">
+<p class="info-status-lead">OpenPrivateer recreates the original <em>Privateer</em> and <em>Righteous Fire</em> using the games' original data. The single-player story, trading, missions, combat, bases and classic presentation are playable in a native modern engine.</p>
+<h3>FAITHFUL TO THE ORIGINAL</h3><p>Classic mode focuses on authentic gameplay. Original DOS save files can be read and written, with additional OpenPrivateer state stored separately so the original format stays intact.</p>
+<h3>ROOM TO EXPLORE</h3><p>Enhanced and Modern modes offer optional additions such as multiple ships, hired wingmen, expanded equipment and stealth systems. Open Universe and mod support allow creators to go further without changing the classic experience.</p>
+<h3>PLAY TOGETHER</h3><p>Online multiplayer includes dedicated servers, a server browser, shared space combat, trading, missions, hired wingmen and chat. Public community servers are available for testing. <a href="#multiplayer">See multiplayer details</a>.</p>
+<p>OpenPrivateer is actively developed and remains a public alpha. Some features are experimental or require further testing. <a href="#status">Check the development status</a> or <a href="#downloads">download a build</a>.</p>
+</div></article>
+</section>
+<section class="section" id="features">
+<header class="section-header">
+<div class="section-tag">FILE 02</div>
+<div>
+<p class="kicker">GAME FEATURES</p>
+<h2>What works so far</h2>
+</div>
+</header>
+<div class="systems-grid">
+<article class="system-card"><span class="system-id">CORE 01</span><h3>Privateer &amp; Righteous Fire</h3><p>The original story, missions, conversations, cutscenes, bases, economy and combat, rebuilt around the original game data. Classic mode preserves the original experience.</p></article>
+<article class="system-card"><span class="system-id">SAVE 02</span><h3>Original Save Compatibility</h3><p>Load and write DOS-compatible savegames. Additional features store their state separately instead of changing the original save format.</p></article>
+<article class="system-card"><span class="system-id">NET 03</span><h3>Online Multiplayer</h3><p>Dedicated servers, server browser, PvE and PvP combat, missions, trading, wingmen, chat and shared flight across systems.</p></article>
+<article class="system-card"><span class="system-id">MOD 04</span><h3>Extensive Modding</h3><p>Custom ships, real 3D models, widescreen cockpits, weapons, equipment, missions and star systems. Install mods directly through the launcher.</p></article>
+<article class="system-card"><span class="system-id">EXT 05</span><h3>Optional Enhancements</h3><p>Own multiple ships, hire escorts, equip cloaking technology and customize ship handling, defenses, weapons and more in Enhanced and Modern modes.</p></article>
+<article class="system-card"><span class="system-id">SYS 06</span><h3>Modern Systems &amp; Controls</h3><p>Native Windows, Linux and macOS builds, Steam Deck support, configurable keyboard, mouse, joystick, HOTAS and gamepad input, plus scaling and CRT display options.</p></article></div>
+</section>
+<section class="section visual-archive" id="screenshots">
+<header class="section-header">
+<div class="section-tag">FILE 03</div>
+<div>
+<p class="kicker">SCREENSHOTS</p>
+<h2>Screenshots</h2>
+</div>
+</header>
+<div class="archive-console bevel">
+<div class="panel-label">IN-GAME SCREENSHOTS</div>
+<p class="archive-intro">
           Captured directly from the latest OpenPrivateer development build in 1152x864 using xBRZ 2x.<br/> Select any screenshot for a full-size view.
         </p>
-        <div class="archive-grid">
-
-          <button class="archive-shot" type="button" data-full="assets/screenshots/01.png" data-index="1" aria-label="Open screenshot 01">
-            <img src="assets/screenshots/01.png" alt="OpenPrivateer screenshot 01" loading="lazy">
-            <span class="shot-meta"><b>SCR 01</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/02.png" data-index="2" aria-label="Open screenshot 02">
-            <img src="assets/screenshots/02.png" alt="OpenPrivateer screenshot 02" loading="lazy">
-            <span class="shot-meta"><b>SCR 02</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/03.png" data-index="3" aria-label="Open screenshot 03">
-            <img src="assets/screenshots/03.png" alt="OpenPrivateer screenshot 03" loading="lazy">
-            <span class="shot-meta"><b>SCR 03</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/04.png" data-index="4" aria-label="Open screenshot 04">
-            <img src="assets/screenshots/04.png" alt="OpenPrivateer screenshot 04" loading="lazy">
-            <span class="shot-meta"><b>SCR 04</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/05.png" data-index="5" aria-label="Open screenshot 05">
-            <img src="assets/screenshots/05.png" alt="OpenPrivateer screenshot 05" loading="lazy">
-            <span class="shot-meta"><b>SCR 05</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/06.png" data-index="6" aria-label="Open screenshot 06">
-            <img src="assets/screenshots/06.png" alt="OpenPrivateer screenshot 06" loading="lazy">
-            <span class="shot-meta"><b>SCR 06</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/07.png" data-index="7" aria-label="Open screenshot 07">
-            <img src="assets/screenshots/07.png" alt="OpenPrivateer screenshot 07" loading="lazy">
-            <span class="shot-meta"><b>SCR 07</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/08.png" data-index="8" aria-label="Open screenshot 08">
-            <img src="assets/screenshots/08.png" alt="OpenPrivateer screenshot 08" loading="lazy">
-            <span class="shot-meta"><b>SCR 08</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/09.png" data-index="9" aria-label="Open screenshot 09">
-            <img src="assets/screenshots/09.png" alt="OpenPrivateer screenshot 09" loading="lazy">
-            <span class="shot-meta"><b>SCR 09</b><span>VIEW IMAGE</span></span>
-          </button>
-          <button class="archive-shot" type="button" data-full="assets/screenshots/10.png" data-index="10" aria-label="Open screenshot 10">
-            <img src="assets/screenshots/10.png" alt="OpenPrivateer screenshot 10" loading="lazy">
-            <span class="shot-meta"><b>SCR 10</b><span>VIEW IMAGE</span></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <div class="lightbox" id="screenshot-lightbox" aria-hidden="true">
-      <div class="lightbox-frame bevel" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
-        <div class="lightbox-bar">
-          <span id="lightbox-counter">REC 01 / 10</span>
-          <button type="button" class="lightbox-close" aria-label="Close screenshot">CLOSE [X]</button>
-        </div>
-        <div class="lightbox-screen">
-          <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous screenshot">&lt;</button>
-          <img id="lightbox-image" src="" alt="OpenPrivateer screenshot">
-          <button type="button" class="lightbox-nav lightbox-next" aria-label="Next screenshot">&gt;</button>
-        </div>
-      </div>
-    </div>
-
-
-    <section id="status" class="section">
-      <header class="section-header">
-        <div class="section-tag">FILE 04</div>
-        <div>
-          <p class="kicker">DEVELOPMENT</p>
-          <h2>Current development status</h2>
-        </div>
-      </header>
-
-      <div class="status-grid">
-        <div class="status-console bevel">
-          <div class="panel-label">DEVELOPMENT PRIORITIES</div>
-
-          <div class="status-row">
-            <div class="status-label"><span>NON-COMBAT GAME FLOW</span><b>COMPLETE</b></div>
-            <div class="bar"><i style="width:100%"></i></div>
-          </div>
-          <div class="status-row">
-            <div class="status-label"><span>SPACE FLIGHT FOUNDATION</span><b>COMPLETE</b></div>
-            <div class="bar"><i style="width:100%"></i></div>
-          </div>
-          <div class="status-row">
-            <div class="status-label"><span>COMBAT & DAMAGE</span><b>COMPLETE</b></div>
-            <div class="bar"><i style="width:100%"></i></div>
-          </div>
-          <div class="status-row">
-            <div class="status-label"><span>FEATURE REQUESTS & BUGFIXES</span><b class="amber">CURRENTLY IN DEVELOPMENT</b></div>
-            <div class="bar amberbar"><i style="width:70%"></i></div>
-          </div>
-          <div class="status-row">
-            <div class="status-label"><span>SAVEGAME WRITING</span><b>COMPLETE</b></div>
-            <div class="bar"><i style="width:100%"></i></div>
-          </div>
-          <div class="status-row">
-            <div class="status-label"><span>DIALOGUES</span><b>COMPLETE</b></div>
-            <div class="bar"><i style="width:100%"></i></div>
-          </div>
-          <div class="status-row">
-            <div class="status-label"><span>MULTIPLAYER</span><b>IN PROGRESS</b></div>
-            <div class="bar"><i style="width:80%"></i></div>
-          </div>
-          <div class="status-row">
-            <div class="status-label"><span>MODDING</span><b>IN PROGRESS</b></div>
-            <div class="bar"><i style="width:70%"></i></div>
-          </div>
-        </div>
-
-        <div class="damage-report bevel">
-          <div class="panel-label danger">TO DO</div>
-          <ul>
-            <li>New UI dialogs need a proper Privateer theme.</li>
-            <li>Multiplayer has no mission progress yet.</li>
-            <li>Open Universe is still mostly empty.</li>
-            <li>Capital Ships &amp; Fleet Combat.</li>
-            <li>Carrier operations.</li>
-            <li>More modding capabilities.</li>
-            <li>HD and Widescreen support.</li>
-            <li>VR Support.</li>
-            <li>All the other feature requests.</li>
-            <li>Squashing some bugs.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="transmission">
-        <span class="transmission-icon">!</span>
-        <div>
-          <b>DISPLAY PIPELINE NOTE</b>
-          <p>OpenPrivateer includes <u>optional</u> xBRZ pixel scaling, CRT filter and texture filtering to help the original 320x200 artwork look its best on modern high-resolution displays, while still letting you keep the original pixel-perfect look if you prefer.</p>
-          <p>HD and widescreen support will come later and gradually evolve alongside the main development, while the original 320x200 experience remains the priority for now.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="downloads" class="section">
-      <header class="section-header">
-        <div class="section-tag">FILE 05</div>
-        <div>
-          <p class="kicker">DOWNLOAD</p>
-          <h2>Alpha downloads</h2>
-        </div>
-      </header>
-
-      <div class="download-console bevel">
-        <div class="download-copy">
-          <div class="panel-label">GETTING STARTED</div>
-          <p class="warning-text">DISCLAIMER: This is an alpha build which can contain bugs, glitches and unfinished features.</p>
-          <div class="download-keypad">
-            <a data-asset="openprivateer-nightly-windows-x86_64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-windows-x86_64.zip">WINDOWS x86_64</a>
-            <a data-asset="openprivateer-nightly-linux-x86_64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-linux-x86_64.zip">LINUX x86_64</a>
-            <a data-asset="openprivateer-nightly-linux-arm64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-linux-arm64.zip">LINUX ARM64</a>
-            <a data-asset="openprivateer-nightly-macos-x86_64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-macos-x86_64.zip">MACOS x86_64</a>
-            <a data-asset="openprivateer-nightly-macos-arm64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-macos-arm64.zip">MACOS ARM64</a>
-            <a data-asset="openprivateer-nightly-macos-universal.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-macos-universal.zip">MACOS UNIVERSAL</a>
-            <a href="https://github.com/schlangz/openprivateer-project/releases/latest">ALL RELEASES</a>
-          </div>
-          <div class="legal-strip stacked">
-            <b>WINDOWS DEFENDER</b>
-            <span>Defender may flag openprivateer.exe as a false positive (e.g. Trojan:Win32/Bearfoos.B!ml or Wacatac.C!ml). This appears to be related to Defender's cloud ML heuristics for new, unsigned software. 66/67 engines on <a href="https://www.virustotal.com/gui/file/8a56c13b1b4c575705af7a63e054ffe31841f1e22283c4271585cfdc6256f25e" target="_blank" rel="noopener noreferrer">VirusTotal</a> report the release as clean. If you encounter this, open Windows Security &gt; Virus &amp; threat protection &gt; Check for updates to download the latest security intelligence. This resolved the detection for us without changing the OpenPrivateer binary.</span>
-          </div>
-          <ol>
-          <li>Download and extract OpenPrivateer.</li>
-          <li>Start openprivateer.exe on Windows, or the corresponding executable on Linux or macOS.</li>
-          <li style="margin-bottom: 8px;">The launcher opens. Select Privateer or Righteous Fire at the top.<br/>
-          <button class="archive-shot" type="button" data-full="assets/launcher.png" data-index="11" aria-label="Open Launcher">
-            <img src="assets/launcher.png" alt="OpenPrivateer Launcher" loading="lazy" style="width: 600px; height: auto;">
-            <span class="shot-meta"><b>LAUNCHER</b><span>VIEW IMAGE</span></span>
-          </button></li>
-          <li>Open Game Data and provide the original game files:
+<div class="archive-grid">
+<button aria-label="Open screenshot 01" class="archive-shot" data-full="assets/screenshots/01.png" data-index="1" type="button">
+<img alt="OpenPrivateer screenshot 01" loading="lazy" src="assets/screenshots/01.png"/>
+<span class="shot-meta"><b>SCR 01</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 02" class="archive-shot" data-full="assets/screenshots/02.png" data-index="2" type="button">
+<img alt="OpenPrivateer screenshot 02" loading="lazy" src="assets/screenshots/02.png"/>
+<span class="shot-meta"><b>SCR 02</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 03" class="archive-shot" data-full="assets/screenshots/03.png" data-index="3" type="button">
+<img alt="OpenPrivateer screenshot 03" loading="lazy" src="assets/screenshots/03.png"/>
+<span class="shot-meta"><b>SCR 03</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 04" class="archive-shot" data-full="assets/screenshots/04.png" data-index="4" type="button">
+<img alt="OpenPrivateer screenshot 04" loading="lazy" src="assets/screenshots/04.png"/>
+<span class="shot-meta"><b>SCR 04</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 05" class="archive-shot" data-full="assets/screenshots/05.png" data-index="5" type="button">
+<img alt="OpenPrivateer screenshot 05" loading="lazy" src="assets/screenshots/05.png"/>
+<span class="shot-meta"><b>SCR 05</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 06" class="archive-shot" data-full="assets/screenshots/06.png" data-index="6" type="button">
+<img alt="OpenPrivateer screenshot 06" loading="lazy" src="assets/screenshots/06.png"/>
+<span class="shot-meta"><b>SCR 06</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 07" class="archive-shot" data-full="assets/screenshots/07.png" data-index="7" type="button">
+<img alt="OpenPrivateer screenshot 07" loading="lazy" src="assets/screenshots/07.png"/>
+<span class="shot-meta"><b>SCR 07</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 08" class="archive-shot" data-full="assets/screenshots/08.png" data-index="8" type="button">
+<img alt="OpenPrivateer screenshot 08" loading="lazy" src="assets/screenshots/08.png"/>
+<span class="shot-meta"><b>SCR 08</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 09" class="archive-shot" data-full="assets/screenshots/09.png" data-index="9" type="button">
+<img alt="OpenPrivateer screenshot 09" loading="lazy" src="assets/screenshots/09.png"/>
+<span class="shot-meta"><b>SCR 09</b><span>VIEW IMAGE</span></span>
+</button>
+<button aria-label="Open screenshot 10" class="archive-shot" data-full="assets/screenshots/10.png" data-index="10" type="button">
+<img alt="OpenPrivateer screenshot 10" loading="lazy" src="assets/screenshots/10.png"/>
+<span class="shot-meta"><b>SCR 10</b><span>VIEW IMAGE</span></span>
+</button>
+</div>
+</div>
+</section>
+<div aria-hidden="true" class="lightbox" id="screenshot-lightbox">
+<div aria-label="Screenshot viewer" aria-modal="true" class="lightbox-frame bevel" role="dialog">
+<div class="lightbox-bar">
+<span id="lightbox-counter">REC 01 / 10</span>
+<button aria-label="Close screenshot" class="lightbox-close" type="button">CLOSE [X]</button>
+</div>
+<div class="lightbox-screen">
+<button aria-label="Previous screenshot" class="lightbox-nav lightbox-prev" type="button">&lt;</button>
+<img alt="OpenPrivateer screenshot" id="lightbox-image" src=""/>
+<button aria-label="Next screenshot" class="lightbox-nav lightbox-next" type="button">&gt;</button>
+</div>
+</div>
+</div>
+<section class="section" id="whats-new"><header class="section-header"><div class="section-tag">UPDATE</div><div><p class="kicker">LATEST DEVELOPMENTS</p><h2>What's new</h2></div></header><div class="intel-grid">
+<article class="intel-card bevel"><div class="panel-label">STEALTH SYSTEMS</div><p>Cloaking Devices and Stealth Coating, with visual and audio effects, NPC support and server-authoritative multiplayer visibility.</p></article>
+<article class="intel-card bevel"><div class="panel-label">MORE EQUIPMENT</div><p>New mod-configurable accessories, ship and weapon upgrades, cargo scanners, jump range extensions, automatic countermeasures and smuggling equipment.</p></article>
+<article class="intel-card bevel"><div class="panel-label">EASIER MOD INSTALLATION</div><p>Install supported mod archives and folders from the launcher, including drag-and-drop and a Downloads list.</p></article>
+<article class="intel-card bevel"><div class="panel-label">UPDATES &amp; MULTIPLAYER</div><p>In-place signed updates on Linux and macOS; multiplayer mission progress now survives death and respawn.</p></article>
+</div><p>For controls, configuration and detailed limitations, see the <a href="#manual">player manual</a>.</p></section><section class="section" id="status">
+<header class="section-header">
+<div class="section-tag">FILE 04</div>
+<div>
+<p class="kicker">DEVELOPMENT</p>
+<h2>Current development status</h2>
+</div>
+</header>
+<div class="status-grid"><div class="status-console bevel"><div class="panel-label">PROJECT STATUS</div>
+<div class="status-row"><div class="status-label"><span>ORIGINAL SINGLE-PLAYER CAMPAIGNS</span><b>PLAYABLE</b></div></div>
+<div class="status-row"><div class="status-label"><span>CLASSIC GAMEPLAY &amp; SAVE COMPATIBILITY</span><b>AVAILABLE</b></div></div>
+<div class="status-row"><div class="status-label"><span>ONLINE MULTIPLAYER</span><b class="amber">PUBLIC TESTING</b></div></div>
+<div class="status-row"><div class="status-label"><span>MODDING &amp; MOD INSTALLER</span><b class="amber">EXPANDING</b></div></div>
+<div class="status-row"><div class="status-label"><span>OPEN UNIVERSE</span><b class="amber">EXPERIMENTAL</b></div></div>
+<div class="status-row"><div class="status-label"><span>HD / WIDESCREEN &amp; VR</span><b class="amber">PLANNED</b></div></div></div>
+<div class="damage-report bevel"><div class="panel-label danger">ONGOING WORK</div><ul>
+<li>Playtesting and polishing recently added equipment and stealth systems.</li>
+<li>Expanding and refining multiplayer and server features.</li>
+<li>More modding capabilities, content and compatibility improvements.</li>
+<li>Improving the UI and presentation while keeping the classic look.</li>
+<li>Future HD, widescreen and VR support.</li>
+<li>Bug fixing and community feature requests.</li>
+</ul></div></div>
+<div class="transmission">
+<span class="transmission-icon">!</span>
+<div>
+<b>DISPLAY PIPELINE NOTE</b>
+<p>OpenPrivateer includes <u>optional</u> xBRZ pixel scaling, CRT filter and texture filtering to help the original 320x200 artwork look its best on modern high-resolution displays, while still letting you keep the original pixel-perfect look if you prefer.</p>
+<p>HD and widescreen support will come later and gradually evolve alongside the main development, while the original 320x200 experience remains the priority for now.</p>
+</div>
+</div>
+</section>
+<section class="section" id="downloads">
+<header class="section-header">
+<div class="section-tag">FILE 05</div>
+<div>
+<p class="kicker">DOWNLOAD</p>
+<h2>Alpha downloads</h2>
+</div>
+</header>
+<div class="download-console bevel">
+<div class="download-copy">
+<div class="panel-label">GETTING STARTED</div>
+<p class="warning-text">DISCLAIMER: This is an alpha build which can contain bugs, glitches and unfinished features.</p>
+<div class="download-keypad">
+<a data-asset="openprivateer-nightly-windows-x86_64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-windows-x86_64.zip">WINDOWS x86_64</a>
+<a data-asset="openprivateer-nightly-linux-x86_64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-linux-x86_64.zip">LINUX x86_64</a>
+<a data-asset="openprivateer-nightly-linux-arm64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-linux-arm64.zip">LINUX ARM64</a>
+<a data-asset="openprivateer-nightly-macos-x86_64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-macos-x86_64.zip">MACOS x86_64</a>
+<a data-asset="openprivateer-nightly-macos-arm64.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-macos-arm64.zip">MACOS ARM64</a>
+<a data-asset="openprivateer-nightly-macos-universal.zip" href="https://github.com/schlangz/openprivateer-project/releases/latest/download/openprivateer-nightly-macos-universal.zip">MACOS UNIVERSAL</a>
+<a href="https://github.com/schlangz/openprivateer-project/releases/latest">ALL RELEASES</a>
+</div>
+<div class="legal-strip stacked">
+<b>WINDOWS DEFENDER</b>
+<span>Defender may flag openprivateer.exe as a false positive (e.g. Trojan:Win32/Bearfoos.B!ml or Wacatac.C!ml). This appears to be related to Defender's cloud ML heuristics for new, unsigned software. 66/67 engines on <a href="https://www.virustotal.com/gui/file/8a56c13b1b4c575705af7a63e054ffe31841f1e22283c4271585cfdc6256f25e" rel="noopener noreferrer" target="_blank">VirusTotal</a> report the release as clean. If you encounter this, open Windows Security &gt; Virus &amp; threat protection &gt; Check for updates to download the latest security intelligence. This resolved the detection for us without changing the OpenPrivateer binary.</span>
+</div>
+<ol>
+<li>Download and extract OpenPrivateer.</li>
+<li>Start openprivateer.exe on Windows, or the corresponding executable on Linux or macOS.</li>
+<li style="margin-bottom: 8px;">The launcher opens. Select Privateer or Righteous Fire at the top.<br/>
+<button aria-label="Open Launcher" class="archive-shot" data-full="assets/launcher.png" data-index="11" type="button">
+<img alt="OpenPrivateer Launcher" loading="lazy" src="assets/launcher.png" style="width: 600px; height: auto;"/>
+<span class="shot-meta"><b>LAUNCHER</b><span>VIEW IMAGE</span></span>
+</button></li>
+<li>Open Game Data and provide the original game files:
           <ul><li>Privateer: PRIV.TRE and INITCFG.PAK</li>
-          <li>Righteous Fire: RF.TRE and INITRF.PAK</li></ul></li>
-          <li>Use Import to Data Folder... to copy files from another folder, or Add Folder... to use files where they already are.</li>
-          <li>The required folders and README files are created automatically when OpenPrivateer starts.</li>
-          <li>Consult the manual or the README.TXT file that now exists in the same folder as the executable.</li>
-          <li>Start a New Game or copy an existing save into the savegame folder.</li>
-          </ol>
-          <p>No proprietary Origin/EA game data will be included.<br/>A legally owned copy of Wing Commander: Privateer is required.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="manual" class="section">
-      <header class="section-header">
-        <div class="section-tag">MAN 07</div>
-        <div>
-          <p class="kicker">MANUAL</p>
-          <h2>Player manual</h2>
-        </div>
-      </header>
-
-      <div class="download-console bevel">
-        <div class="download-copy">
-          <div class="panel-label">GETTING STARTED</div>
-          <p class="warning-text">DISCLAIMER: This is an alpha build which can contain bugs, glitches and unfinished features.</p>
+<li>Righteous Fire: RF.TRE and INITRF.PAK</li></ul></li>
+<li>Use Import to Data Folder... to copy files from another folder, or Add Folder... to use files where they already are.</li>
+<li>The required folders and README files are created automatically when OpenPrivateer starts.</li>
+<li>Consult the manual or the README.TXT file that now exists in the same folder as the executable.</li>
+<li>Start a New Game or copy an existing save into the savegame folder.</li>
+</ol>
+<p>No proprietary Origin/EA game data will be included.<br/>A legally owned copy of Wing Commander: Privateer is required.</p>
+</div>
+</div>
+</section>
+<section class="section" id="manual">
+<header class="section-header">
+<div class="section-tag">MAN 07</div>
+<div>
+<p class="kicker">MANUAL</p>
+<h2>Player manual</h2>
+</div>
+</header>
+<div class="download-console bevel">
+<div class="download-copy">
+<div class="panel-label">GETTING STARTED</div>
+<p class="warning-text">DISCLAIMER: This is an alpha build which can contain bugs, glitches and unfinished features.</p>
           The <a href="https://openprivateer.org/manual.pdf">OpenPrivateer Player Manual</a> is here: installation (including GOG's GAME.GOG), Experience Modes (Classic/Enhanced/Modern), controls and joystick calibration, saves, Mission Computer, multiple ships and hired wingmen, multiplayer, troubleshooting and bug reporting.
         </div>
-      </div>
-    </section>
-
-    <section id="multiplayer" class="section">
-      <header class="section-header">
-        <div class="section-tag">MULTI 02</div>
-        <div>
-          <p class="kicker">MULTIPLAYER</p>
-          <h2>Client & Server.</h2>
-        </div>
-      </header>
-
-      <div class="download-console bevel">
-        <div class="download-copy">
-          <div class="panel-label">GETTING STARTED</div>
-          <p class="warning-text">DISCLAIMER: This is an alpha build which can contain bugs, glitches and unfinished features.</p>
-          <ol>
-          <li>Start the dedicated server (headless - no window, no SDL, no GPU, no audio):
-          <ul><li><i>openprivateer_server --tre /path/to/PRIV.TRE</i> (UDP port 24601 by default)</li>
-          <li>Important parameters (<i>openprivateer_server --help</i> lists them all):
-          <ul><li><i>--port N</i></li>
-          <li><i>--max-players N</i></li>
-          <li><i>--verbose</i></li></ul></li></ul>
-          </li>
-          <li>Connect a client:
-          <ul><li><i>openprivateer --connect HOST:24601 /path/to/PRIV.TRE</i></li>
-          <li>Important parameters:
-          <ul><li><i>--connect HOST:PORT</i></li>
-          <li><i>--callsign NAME</i> (shows your pilot in the other players' HUDs and in the server log)</li></ul></li></ul>
-          </li>
-          </ol>
-          An invalid option or an unreadable archive is a one-line error and a non-zero exit.<br/>
-          The server will reject clients running a different game build, a different game (Privateer vs. Righteous Fire), or a different experience mode (Classic vs. Enhanced/Modern) than the server.
-        </div>
-      </div>
-    </section>
-
-    <section id="modding" class="section">
-      <header class="section-header">
-        <div class="section-tag">FILE 06</div>
-        <div>
-          <p class="kicker">MODDING</p>
-          <h2>Modding and game data</h2>
-        </div>
-      </header>
-
-      <div class="intel-grid">
-        <article class="intel-card bevel">
-          <div class="panel-label">MODDING</div>
-          <p>OpenPrivateer supports replacement game assets, text translations, and configurable weapons, equipment and missions. More modding options are in development.</p>
-        </article>
-        <article class="intel-card bevel">
-          <div class="panel-label">PRESERVATION</div>
-          <p>The original game files and executable are being studied to reproduce Privateer’s behavior and document how its systems work.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="community" class="section">
-      <div class="comms-window bevel">
-        <div class="panel-label">COMMUNITY</div>
-        <div class="comms-body">
-          <div class="portrait-placeholder">
-            <div class="portrait-grid"></div>
-            <span>COMM</span>
-          </div>
-          <div>
-            <p class="kicker">GET IN TOUCH</p>
-            <h2>OpenPrivateer Discord</h2>
-            <p>Discord server for development updates, testing, feedback, modding, technical discussion and general Wing Commander chatter is open now and can be joined <a href="https://discord.gg/5H3vW2STqW" target="_blank" rel="noopener noreferrer">here</a>.</p>
-            <p>You can also join us on <a href="https://www.reddit.com/r/WingCommanderUniverse/" target="_blank" rel="noopener noreferrer">r/WingCommanderUniverse</a>.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="platforms" class="section">
-      <header class="section-header">
-        <div class="section-tag">FILE 07</div>
-        <div>
-          <p class="kicker">SUPPORTED PLATFORMS</p>
-          <h2>Supported platforms</h2>
-        </div>
-      </header>
-
-      <div class="platform-console bevel">
-        <div class="panel-label">PLATFORM SUPPORT</div>
-        <p class="platform-intro">
+</div>
+</section>
+<section class="section" id="multiplayer">
+<header class="section-header">
+<div class="section-tag">MULTI 02</div>
+<div>
+<p class="kicker">MULTIPLAYER</p>
+<h2>Client &amp; Server.</h2>
+</div>
+</header>
+<div class="download-console bevel">
+<div class="download-copy"><div class="panel-label">JOIN THE PUBLIC TEST</div>
+<p>Fly with other pilots on community-hosted servers in Europe and North America. Multiplayer features shared spaceflight, server-authoritative PvE/PvP combat, missions, trading, wingmen and chat. This is still an alpha test: expect bugs and occasional incompatibilities between builds.</p>
+<h3>JOIN A SERVER</h3><ol><li>Install the <a href="#downloads">latest OpenPrivateer build</a> and configure your original game data in the launcher.</li><li>Open <strong>Multiplayer &gt; Browse Servers &gt; Internet</strong> in the launcher.</li><li>Select a public server and enter its password if requested. If you need it, ask on our <a href="#community">Discord</a>.</li><li>Launch the game, then select <strong>NEW</strong> or <strong>LOAD</strong> to join.</li></ol>
+<p>Press <strong>Y</strong> (Z on German keyboards) for global chat, or use the original Communications MFD to contact another pilot privately. Your saves remain local; flight and combat are handled by the server.</p>
+<h3>HOST YOUR OWN SERVER</h3><p>OpenPrivateer includes a headless dedicated server and launcher hosting options. For server configuration, port settings and command-line examples, see the <a href="#manual">player manual</a>.</p></div>
+</div>
+</section>
+<section class="section" id="modding">
+<header class="section-header">
+<div class="section-tag">FILE 06</div>
+<div>
+<p class="kicker">MODDING</p>
+<h2>Modding and game data</h2>
+</div>
+</header>
+<div class="intel-grid"><article class="intel-card bevel"><div class="panel-label">CREATE &amp; EXPAND</div><p>Mods can introduce new ships, weapons, equipment, missions, starting conditions, systems, jump routes, bases and other gameplay changes. OpenPrivateer also supports real 3D ship models and widescreen cockpit mods. Equipment modifiers cover handling, shields, armour, power, guns, stealth and specialized ship systems.</p></article>
+<article class="intel-card bevel"><div class="panel-label">INSTALL &amp; CUSTOMIZE</div><p>Use <strong>INSTALL MOD...</strong> in the launcher or drag files and folders onto it. Supported formats include ZIP, RAR, 7z and TAR variants. Players can also replace local art, sounds and translations, install widescreen cockpit artwork, and use real 3D ship models.</p></article>
+<article class="intel-card bevel"><div class="panel-label">ORIGINAL GAME PRESERVATION</div><p>The original game files and executable are studied to reproduce Privateer's behaviour. Optional additions are designed to coexist with Classic mode and original game data.</p></article></div>
+</section>
+<section class="section" id="community">
+<div class="comms-window bevel">
+<div class="panel-label">COMMUNITY</div>
+<div class="comms-body">
+<div class="portrait-placeholder">
+<div class="portrait-grid"></div>
+<span>COMM</span>
+</div>
+<div>
+<p class="kicker">GET IN TOUCH</p>
+<h2>OpenPrivateer Discord</h2>
+<p>Discord server for development updates, testing, feedback, modding, technical discussion and general Wing Commander chatter is open now and can be joined <a href="https://discord.gg/5H3vW2STqW" rel="noopener noreferrer" target="_blank">here</a>.</p>
+<p>You can also join us on <a href="https://www.reddit.com/r/WingCommanderUniverse/" rel="noopener noreferrer" target="_blank">r/WingCommanderUniverse</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="platforms">
+<header class="section-header">
+<div class="section-tag">FILE 07</div>
+<div>
+<p class="kicker">SUPPORTED PLATFORMS</p>
+<h2>Supported platforms</h2>
+</div>
+</header>
+<div class="platform-console bevel">
+<div class="panel-label">PLATFORM SUPPORT</div>
+<p class="platform-intro">
           OpenPrivateer is based on SDL3 and already builds natively for the three major desktop platforms.
           Windows, Linux and macOS builds are available.
         </p>
-
-        <div class="platform-grid">
-          <article class="platform-card">
-            <span class="platform-code">PLATFORM 01</span>
-            <div class="platform-icon">WIN</div>
-            <h3>Windows</h3>
-            <p>Native desktop builds for modern Windows systems.</p>
-            <span class="platform-status">SUPPORTED</span>
-          </article>
-
-          <article class="platform-card">
-            <span class="platform-code">PLATFORM 02</span>
-            <div class="platform-icon">LNX</div>
-            <h3>Linux</h3>
-            <p>Native Linux builds using the same SDL3-based engine.</p>
-            <span class="platform-status">SUPPORTED</span>
-          </article>
-
-          <article class="platform-card">
-            <span class="platform-code">PLATFORM 03</span>
-            <div class="platform-icon">MAC</div>
-            <h3>macOS</h3>
-            <p>Native macOS builds alongside Windows and Linux.</p>
-            <span class="platform-status">SUPPORTED</span>
-          </article>
-        </div>
-
-        <div class="transmission platform-note">
-          <span class="transmission-icon">+</span>
-          <div>
-            <b>OTHER PLATFORMS</b>
-            <p>The SDL3-based engine may be ported to other platforms later. Windows, Linux and macOS are the current targets.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="section">
-      <header class="section-header">
-        <div class="section-tag">FILE 08</div>
-        <div>
-          <p class="kicker">FAQ</p>
-          <h2>Frequently asked questions</h2>
-        </div>
-      </header>
-
-      <div class="faq">
-        <details><summary>Is OpenPrivateer a remake?</summary><p>Not quite. It's a new engine built to recreate the original Privateer as closely as possible, using the original game data.</p></details>
-        <details><summary>Does it include the original game files?</summary><p>No. You'll need your own copy of Wing Commander: Privateer. OpenPrivateer doesn't include any of the original copyrighted game files.</p></details>
-        <details><summary>Can I download it already?</summary><p>Yes! The public alpha is available in the Downloads section. Keep in mind that it's still under development, so expect a few bugs.</p></details>
-        <details><summary>Will there be widescreen and HD support?</summary><p>Yes, that's planned. For now, I'm focusing on getting the original 320x200 game right before moving on to higher resolutions and widescreen support.</p></details>
-        <details><summary>What about VR?</summary><p>VR is high on my wishlist, but there's quite a bit of work to do first, especially getting the 3D models ready.</p></details>
-        <details><summary>Can I make mods?</summary><p>Yes! You can already replace game assets, add translations, and modify various parts of the game using the original PAK and IFF formats. Support for things like custom ships, bases, and star systems is being expanded.</p></details>
-        <details><summary>What can I do in multiplayer?</summary><p>You can fly around with other players, fight NPCs or each other, jump between systems, and land at bases. Missions and shared campaign progress aren't supported yet.</p></details>
-      </div>
-    </section>
-
-    <section id="donate" class="section">
-      <header class="section-header">
-        <div class="section-tag">CRED 01</div>
-        <div>
-          <p class="kicker">DONATION</p>
-          <h2>Support OpenPrivateer</h2>
-        </div>
-      </header>
-
-      <div>
-        <p class="lead">OpenPrivateer is free and will stay free. If you would like to support its development, you can buy me a coffee.</p>
-        <p class="lead"><a href="https://www.buymeacoffee.com/schlangz" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></p>
-      </div>
-    </section>
-
-
-    <section id="special-thanks" class="section special-thanks">
-      <header class="section-header">
-        <div class="section-tag">FILE 09</div>
-        <div>
-          <p class="kicker">PROJECT CREDITS</p>
-          <h2>Special Thanks.</h2>
-        </div>
-      </header>
-
-      <div class="download-console bevel">
-        <div class="download-copy">
-          <div class="panel-label">ACKNOWLEDGMENTS</div>
-
-          <p><strong>Origin Systems</strong>, for creating <em>Wing Commander: Privateer</em>.</p>
-
-          <p><strong><a href="https://www.youtube.com/watch?v=7W_1ryWrU5w" target="_blank" rel="noopener noreferrer">Space Cadet Rewind</a></strong>'s nearly 3-hour Privateer retrospective is one of the most thorough critical playthroughs of the original game available anywhere, and directly informed OpenPrivateer's Enhanced/Modern feature backlog. Thanks for the fantastic video.</p>
-
-          <p><strong>Mario "HCl" Brito</strong>, together with Maciek "Matrix" Miąsik on <code>wc1g.txt</code>, wrote decades-old hand-reverse-engineered format notes that kicked off this project's <code>.TRE</code>/<code>.PAK</code> and <code>.SHP</code> format work, and cross-checked the <code>PROG</code> mission-bytecode work. Thanks to Mario for sharing his work, knowledge, and experience with the project.</p>
-
-          <p><strong>DOSBox</strong> and <strong>DOSBox Staging</strong> have been invaluable tools for running and studying the original Privateer. Their debugger provided the foundation for much of the project's dynamic analysis, and a modified build with targeted runtime logging has made it possible to observe original game state across thousands of executions and validate OpenPrivateer's reconstructed behavior against the real game. Many thanks to both teams for their work. OpenPrivateer wouldn't have come this far without it.</p>
-
-          <p><strong>Charles Cafrelli</strong>, one of the original Privateer development team, generously shared his own recollections of how the game's gameflow (base/menu) side and its space-combat engine hand state back and forth - insight that helped make sense of mechanisms this project could otherwise only partially piece together from the executable and file formats alone. Thanks to Charles for taking the time to talk to a fan project three decades on.</p>
-
-          <p><strong>Edwin Herrell</strong>, another member of the original Privateer development team, generously shared firsthand insight into the game's flight model, including its damping behavior, simulated weapon-fire projectiles and lead calculation, and target collision checks. His explanations helped us better understand the original code, clear up some unanswered questions, and confirm parts of our reverse engineering. Thanks to Edwin for sharing his knowledge and helping us better understand the original game.</p>
-
-          <p><strong>Our testers</strong>, for all the time and patience they've put into OpenPrivateer. From reporting bugs and sharing feedback to doing their best to break the game, they've helped us more than they probably realize. A huge thank you to all of them.</p>
-
-          <p><strong>Anthropic Claude</strong>,  for its help with reverse engineering the original Privateer executable, analyzing assembly code, writing technical documentation, and developing and running tests. With Claude's help, we've managed to accomplish in just a few months what would likely have taken us five years or more otherwise. It's hard to overstate how much of a difference that has made to the project.</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div>
-      <b>OPENPRIVATEER</b>
-      <span>Independent fan project. Not affiliated with Electronic Arts or Origin Systems.</span>
-    </div>
-    <div>
-      <span>SEE YOU IN-GAME</span>
-      <a href="#top">RETURN TO TOP</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<div class="platform-grid">
+<article class="platform-card">
+<span class="platform-code">PLATFORM 01</span>
+<div class="platform-icon">WIN</div>
+<h3>Windows</h3>
+<p>Native desktop builds for modern Windows systems.</p>
+<span class="platform-status">SUPPORTED</span>
+</article>
+<article class="platform-card">
+<span class="platform-code">PLATFORM 02</span>
+<div class="platform-icon">LNX</div>
+<h3>Linux</h3>
+<p>Native Linux builds using the same SDL3-based engine.</p>
+<span class="platform-status">SUPPORTED</span>
+</article>
+<article class="platform-card">
+<span class="platform-code">PLATFORM 03</span>
+<div class="platform-icon">MAC</div>
+<h3>macOS</h3>
+<p>Native macOS builds alongside Windows and Linux.</p>
+<span class="platform-status">SUPPORTED</span>
+</article>
+</div>
+<div class="transmission platform-note">
+<span class="transmission-icon">+</span>
+<div>
+<b>OTHER PLATFORMS</b>
+<p>The SDL3-based engine may be ported to other platforms later. Windows, Linux and macOS are the current targets.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="faq">
+<header class="section-header">
+<div class="section-tag">FILE 08</div>
+<div>
+<p class="kicker">FAQ</p>
+<h2>Frequently asked questions</h2>
+</div>
+</header>
+<div class="faq">
+<details><summary>Is OpenPrivateer a remake?</summary><p>Not quite. It's a new engine built to recreate the original Privateer as closely as possible, using the original game data.</p></details>
+<details><summary>Does it include the original game files?</summary><p>No. You'll need your own copy of Wing Commander: Privateer. OpenPrivateer doesn't include any of the original copyrighted game files.</p></details>
+<details><summary>Can I download it already?</summary><p>Yes! The public alpha is available in the Downloads section. Keep in mind that it's still under development, so expect a few bugs.</p></details>
+<details><summary>Will there be widescreen and HD support?</summary><p>Yes, that's planned. For now, I'm focusing on getting the original 320x200 game right before moving on to higher resolutions and widescreen support.</p></details>
+<details><summary>What about VR?</summary><p>VR is high on my wishlist, but there's quite a bit of work to do first, especially getting the 3D models ready.</p></details>
+<details><summary>Can I make mods?</summary><p>Yes! You can already replace game assets, add translations, and modify various parts of the game using the original PAK and IFF formats. Support for things like custom ships, bases, and star systems is being expanded.</p></details>
+<details><summary>What can I do in multiplayer?</summary><p>You can join public or private dedicated servers, fight NPCs and other players, trade, complete missions, hire wingmen and chat. Multiplayer remains in public testing, and some features may have limitations.</p></details>
+</div>
+</section>
+<section class="section" id="donate">
+<header class="section-header">
+<div class="section-tag">CRED 01</div>
+<div>
+<p class="kicker">DONATION</p>
+<h2>Support OpenPrivateer</h2>
+</div>
+</header>
+<div>
+<p class="lead">OpenPrivateer is free and will stay free. If you would like to support its development, you can buy me a coffee.</p>
+<p class="lead"><a href="https://www.buymeacoffee.com/schlangz" rel="noopener noreferrer" target="_blank">Buy me a coffee</a></p>
+</div>
+</section>
+<section class="section special-thanks" id="special-thanks">
+<header class="section-header">
+<div class="section-tag">FILE 09</div>
+<div>
+<p class="kicker">PROJECT CREDITS</p>
+<h2>Special Thanks.</h2>
+</div>
+</header>
+<div class="download-console bevel">
+<div class="download-copy">
+<div class="panel-label">ACKNOWLEDGMENTS</div>
+<p><strong>Origin Systems</strong>, for creating <em>Wing Commander: Privateer</em>.</p>
+<p><strong><a href="https://www.youtube.com/watch?v=7W_1ryWrU5w" rel="noopener noreferrer" target="_blank">Space Cadet Rewind</a></strong>'s nearly 3-hour Privateer retrospective is one of the most thorough critical playthroughs of the original game available anywhere, and directly informed OpenPrivateer's Enhanced/Modern feature backlog. Thanks for the fantastic video.</p>
+<p><strong>Mario "HCl" Brito</strong>, together with Maciek "Matrix" Miąsik on <code>wc1g.txt</code>, wrote decades-old hand-reverse-engineered format notes that kicked off this project's <code>.TRE</code>/<code>.PAK</code> and <code>.SHP</code> format work, and cross-checked the <code>PROG</code> mission-bytecode work. Thanks to Mario for sharing his work, knowledge, and experience with the project.</p>
+<p><strong>DOSBox</strong> and <strong>DOSBox Staging</strong> have been invaluable tools for running and studying the original Privateer. Their debugger provided the foundation for much of the project's dynamic analysis, and a modified build with targeted runtime logging has made it possible to observe original game state across thousands of executions and validate OpenPrivateer's reconstructed behavior against the real game. Many thanks to both teams for their work. OpenPrivateer wouldn't have come this far without it.</p>
+<p><strong>Charles Cafrelli</strong>, one of the original Privateer development team, generously shared his own recollections of how the game's gameflow (base/menu) side and its space-combat engine hand state back and forth - insight that helped make sense of mechanisms this project could otherwise only partially piece together from the executable and file formats alone. Thanks to Charles for taking the time to talk to a fan project three decades on.</p>
+<p><strong>Edwin Herrell</strong>, another member of the original Privateer development team, generously shared firsthand insight into the game's flight model, including its damping behavior, simulated weapon-fire projectiles and lead calculation, and target collision checks. His explanations helped us better understand the original code, clear up some unanswered questions, and confirm parts of our reverse engineering. Thanks to Edwin for sharing his knowledge and helping us better understand the original game.</p>
+<p><strong>Our testers</strong>, for all the time and patience they've put into OpenPrivateer. From reporting bugs and sharing feedback to doing their best to break the game, they've helped us more than they probably realize. A huge thank you to all of them.</p>
+<p><strong>Anthropic Claude</strong>,  for its help with reverse engineering the original Privateer executable, analyzing assembly code, writing technical documentation, and developing and running tests. With Claude's help, we've managed to accomplish in just a few months what would likely have taken us five years or more otherwise. It's hard to overstate how much of a difference that has made to the project.</p>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div>
+<b>OPENPRIVATEER</b>
+<span>Independent fan project. Not affiliated with Electronic Arts or Origin Systems.</span>
+</div>
+<div>
+<span>SEE YOU IN-GAME</span>
+<a href="#top">RETURN TO TOP</a>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

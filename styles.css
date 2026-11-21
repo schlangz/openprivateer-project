@@ -791,3 +791,56 @@ body.lightbox-open { overflow: hidden; }
   .modding-status-head { flex-direction: column; gap: 5px; }
   .modding-status-grid ul { font-size: 16px; }
 }
+
+
+/* Homepage V2: align new content with the existing XL typography scale. */
+#whats-new > p {
+  margin: 26px 0 0;
+  color: #a4a59d;
+  font: 18px/1.7 Arial, Helvetica, sans-serif;
+}
+#whats-new > p a,
+#multiplayer .download-copy a,
+#modding .intel-card a {
+  color: var(--amber);
+  text-decoration: none;
+  border-bottom: 1px solid var(--amber2);
+}
+#whats-new > p a:hover,
+#multiplayer .download-copy a:hover,
+#modding .intel-card a:hover { color: var(--green); border-bottom-color: var(--green2); }
+#multiplayer .download-copy h3 {
+  margin: 28px 0 10px;
+  color: var(--amber);
+  font: 700 14px/1.35 "Courier New", Courier, monospace;
+  letter-spacing: .12em;
+}
+#multiplayer .download-copy ol {
+  margin: 12px 0 22px;
+  padding-left: 28px;
+  color: #a4a59d;
+  font: 17px/1.7 Arial, Helvetica, sans-serif;
+}
+#multiplayer .download-copy li { padding-left: 5px; margin: 7px 0; }
+#multiplayer .download-copy li::marker { color: var(--green); font-weight: 700; }
+#multiplayer .download-copy code { color: var(--green); }
+#modding .intel-card p { font: 18px/1.65 Arial, Helvetica, sans-serif; }
+#whats-new .intel-card p { font: 18px/1.65 Arial, Helvetica, sans-serif; }
+/* Keep the expanded V2 navigation within the cockpit bar. */
+@media(min-width:901px) {
+  .nav a { padding-inline: clamp(5px, .75vw, 12px); font-size: clamp(10px, .92vw, 13px); }
+  .logo { padding-inline: 12px; }
+  .clockbox { min-width: 90px; padding-inline: 10px; }
+}
+@media(max-width:1100px) and (min-width:901px) {
+  .cockpit-bar { grid-template-columns: auto 1fr; }
+  .nav { grid-column: 1 / -1; grid-row: 2; }
+  .nav a { padding: 12px 8px; }
+  .clockbox { grid-column: 2; grid-row: 1; justify-self: end; }
+}
+@media(max-width:650px) {
+  #whats-new > p { font-size: 16px; }
+  #whats-new .intel-card p,
+  #modding .intel-card p { font-size: 16px; }
+  #multiplayer .download-copy ol { font-size: 16px; }
+}
